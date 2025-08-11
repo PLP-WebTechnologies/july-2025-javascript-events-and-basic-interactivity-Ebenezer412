@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Interactive Web Page Assignment</h1>
+
+  <!-- Part 2: Interactive features -->
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="toggleThemeBtn">Toggle Light/Dark Mode</button>
+
+  <!-- Counter -->
+  <div>
+    <h2>Counter</h2>
+    <button id="decreaseBtn">-</button>
+    <span id="counterValue">0</span>
+    <button id="increaseBtn">+</button>
+  </div>
+
+  <!-- Part 3: Form with validation -->
+  <h2>Sign Up Form</h2>
+  <form id="signupForm" novalidate>
+    <div>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" />
+      <small class="error" id="nameError"></small>
+    </div>
+    <div>
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" />
+      <small class="error" id="emailError"></small>
+    </div>
+    <div>
+      <label for="password">Password:</label><br/>
+      <input type="password" id="password" name="password" />
+      <small class="error" id="passwordError"></small>
+    </div>
+    <button type="submit">Submit</button>
+    <p id="formSuccess" style="color:green;"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
